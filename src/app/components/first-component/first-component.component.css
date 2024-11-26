@@ -14,3 +14,13 @@ p{
     padding: 10px;
     text-align: center;
 }
+
+a{
+    color: red;
+}
+
+.title{
+    background-color: gray;
+    margin: 0 auto;
+    align-items: center;
+}
