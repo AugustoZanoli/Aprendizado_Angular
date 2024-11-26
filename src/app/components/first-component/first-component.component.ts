@@ -7,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrl: './first-component.component.css'
 })
 export class FirstComponentComponent {
+  name: string = 'Augusto';
+  idade: number = 30;
+  job = 'Programador';
+  carro = {
+    nome: 'Lancer',
+    cor: 'Azul',
+    ano: 2008
+  }
+  
+  constructor() {}
 
+  ngOnInit(): void{
+    
+  }
 }
