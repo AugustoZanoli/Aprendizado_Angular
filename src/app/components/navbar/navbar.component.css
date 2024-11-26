@@ -1,6 +1,8 @@
 nav{
-    background-color: aqua;
+    background-color: rgb(255, 119, 0);
     margin: 0;
     padding: 0;
     text-align: center;
+    color: white;
+    height: 90px;
 }

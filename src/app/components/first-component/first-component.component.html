@@ -1,12 +1,20 @@
-<div id="div_componente">
+<div id="body_componente">
     <h1>Meu componente</h1>
-    <p>Esse é meu primeiro componente, a fim de entender componentização.</p>
-</div>
-<div>
-    <h2 class="title">Utilizando interpolação</h2>
-    <p>Nome: {{name}}</p>
-    <p>Idade: {{idade}}</p>
-    <p>Trabalho: {{job}}</p>
-    <p>Carro: {{carro.nome}} - cor: {{carro.cor}} - ano: {{carro.ano}}</p>
-    <a href="">Buscar</a>
+    <div id="div_componente">
+        <p>Esse é meu primeiro componente, a fim de entender componentização. <br>Eu consigo 
+            adicionar componentes pre definidos que eu tenha criado.
+        </p>
+    </div>
+    <div>
+        <h2>Utilizando interpolação</h2>
+        <p>Nome: {{name}}</p>
+        <p>Idade: {{idade}}</p>
+        <p>Trabalho: {{job}}</p>
+        <p>Carro: {{carro.nome}} - cor: {{carro.cor}} - ano: {{carro.ano}}</p>
+        <p>A interpolação é utilizada para passar variáveis e imprimir seus valores na tela. <br> Essas variáveis vem do arquivo Typescript</p>
+    </div>
+    <div>
+        <h2>Css</h2>
+        <p id="paragrafo_css">Outro fator que podemos usar é o css global ou local. Por exemplo, um componente pode ter seu proprio css, independente do css global. <br> Por exemplo, esse texto possui uma cor diferente dos demais.</p>
+    </div>
 </div>
