@@ -2,11 +2,13 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.1.
 
-## Aprendizado
+---
+
+## 📝 Aprendizado
 
 Esse repositório visa demonstrar e registrar meu apredizado com o framework Angular. Nesse repositório irei guardar informações importantes sobre o framework, além de deixar claro como as coisas funcionam para futuras pesquisas e ajudar quem está começando agora.
 
-## Criação do projeto
+## 💻 Criação do projeto
 
 Para criarmos nosso projeto Angular, primeiro devemos abri a pasta que desejamos, e no terminal rodamos o seguinte código:
 ```
@@ -19,7 +21,7 @@ Após isso, no nosso diretório será adicionado as pastas e dependencias necess
 ng serve
 ```
 
-## Componentização
+## 📁 Componentização
 
 Componentização é uma ferramenta do Angular que pode ser resumida em criar componentes para reutiliza-los, ou seja, poupar trabalho e garantir um padrão.
 
@@ -36,7 +38,7 @@ Vale ressaltar que por questões de organização e boas práticas, é sempre bo
 ng generate component components/<nome_do_componente>
 ```
 
-## Interpolação
+## ♻️ Interpolação
 
 Interpolação é um exemplo claro de quando queremos imprimir valores de váriaveis na tela, sem precisar definir valores diretos nas tags.
 
@@ -64,7 +66,7 @@ html:
     <p>Nome: {{name}}</p>
 </div>
 ```
-## Parentização (Input)
+## 👫 Parentização (Input)
 
 Parentização se trata de um componente filho herdar váriaveis e valores do componente pai. Por exemplo, um componente pai que possua a variável "Nome". Podemos passar essa váriavel para o componente filho e manipular seu valor através do @Input.
 
