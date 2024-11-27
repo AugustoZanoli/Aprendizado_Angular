@@ -40,7 +40,7 @@ ng generate component components/<nome_do_componente>
 
 Interpolação é um exemplo claro de quando queremos imprimir valores de váriaveis na tela, sem precisar definir valores diretos nas tags.
 
-**Exemplo:**
+Exemplo:
 
 typescript:
 
@@ -64,4 +64,31 @@ html:
     <p>Nome: {{name}}</p>
 </div>
 ```
+## Parentização (Input)
 
+Parentização se trata de um componente filho herdar váriaveis e valores do componente pai. Por exemplo, um componente pai que possua a variável "Nome". Podemos passar essa váriavel para o componente filho e manipular seu valor através do @Input.
+
+Componente pai:
+```
+export class AppComponent {
+  userName = 'Augusto';
+  userData = {
+    email: 'augusto@gmail.com',
+    role: 'estudante',
+    idade: 20,
+    carro: ''
+  }
+  
+  title = 'curso_angular';
+}
+```
+
+Componente filho:
+```
+export class ParentDataComponent {
+  @Input() name: String = '';
+  @Input() userData !: {email: string, role: string, idade: number}; //!: inicia o dado
+
+  constructor(){}
+}
+```
