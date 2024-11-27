@@ -21,6 +21,8 @@ Após isso, no nosso diretório será adicionado as pastas e dependencias necess
 ng serve
 ```
 
+---
+
 ## 📁 Componentização
 
 Componentização é uma ferramenta do Angular que pode ser resumida em criar componentes para reutiliza-los, ou seja, poupar trabalho e garantir um padrão.
@@ -37,6 +39,8 @@ Vale ressaltar que por questões de organização e boas práticas, é sempre bo
 ```
 ng generate component components/<nome_do_componente>
 ```
+
+---
 
 ## ♻️ Interpolação
 
@@ -66,6 +70,9 @@ html:
     <p>Nome: {{name}}</p>
 </div>
 ```
+
+---
+
 ## 👫 Parentização (Input)
 
 Parentização se trata de um componente filho herdar váriaveis e valores do componente pai. Por exemplo, um componente pai que possua a variável "Nome". Podemos passar essa váriavel para o componente filho e manipular seu valor através do @Input.
