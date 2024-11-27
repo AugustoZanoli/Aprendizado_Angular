@@ -6,3 +6,8 @@ nav{
     color: white;
     height: 90px;
 }
+
+hr{
+    height: 1px;
+    background-color: black;
+}
