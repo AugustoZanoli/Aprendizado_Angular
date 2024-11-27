@@ -2,58 +2,66 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.1.
 
-## Development server
+## Aprendizado
 
-To start a local development server, run:
+Esse repositório visa demonstrar e registrar meu apredizado com o framework Angular. Nesse repositório irei guardar informações importantes sobre o framework, além de deixar claro como as coisas funcionam para futuras pesquisas e ajudar quem está começando agora.
 
-```bash
+## Criação do projeto
+
+Para criarmos nosso projeto Angular, primeiro devemos abri a pasta que desejamos, e no terminal rodamos o seguinte código:
+```
+ng new <nome_do_projeto>
+```
+
+Após isso, no nosso diretório será adicionado as pastas e dependencias necessárias no projeto. Para que possamos de fato visualizar o código rodando, basta rodar:
+
+```
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Componentização
 
-## Code scaffolding
+Componentização é uma ferramenta do Angular que pode ser resumida em criar componentes para reutiliza-los, ou seja, poupar trabalho e garantir um padrão.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Um exemplo disso pode ser uma navbar, onde ao invés de toda página você ter que colocar o código completo, basta você criar um componente "navBar", programar ela conforme seu gosto, e após isso apenas adicionar seu componente ao código principal ou outras páginas.
 
-```bash
-ng generate component component-name
+Como criar um componente?
+```
+ng generate component <nome_do_componente>
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Vale ressaltar que por questões de organização e boas práticas, é sempre bom ter um diretório próprio para os componentes.
 
-```bash
-ng generate --help
+```
+ng generate component components/<nome_do_componente>
 ```
 
-## Building
+## Interpolação
 
-To build the project run:
+Interpolação é um exemplo claro de quando queremos imprimir valores de váriaveis na tela, sem precisar definir valores diretos nas tags.
 
-```bash
-ng build
+**Exemplo:**
+
+typescript:
+
+```
+export class FirstComponentComponent {
+  name: string = 'Augusto';
+  
+  constructor() {}
+
+  ngOnInit(): void{
+    
+  }
+}
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+html:
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
+```
+<div>
+    <h2>Utilizando interpolação</h2>
+    <p>Nome: {{name}}</p>
+</div>
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
